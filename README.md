@@ -39,7 +39,7 @@ python photolab.py resize ../../lectures/L05-filtering/demo/iu-building.jpg --sc
 python photolab.py chromakey ../../lectures/L03-color-histograms/demo/ball-lamp.jpg --bg ../../lectures/L04-geometry/demo/road-cam.jpg --lo 140,121,40 --hi 168,230,255 -o out/ck.jpg --mask out/ck_mask.png
 python photolab.py rectify ../../lectures/L04-geometry/demo/poster-angle.jpg --corners 1290,1010,560,330,600,840,1250,220 --aspect 0.707 -o out/front.jpg
 ### Тесты
-cd template && pytest tests -q && cd ..
+pytest tests -q
 
 
 **Курс «Введение в компьютерное зрение» · Innopolis University · Fall 2026**
